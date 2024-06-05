@@ -42,6 +42,7 @@
   --red-light: #f8d7da;
   --red-dark: #842029;
   --green-light: #d1e7dd;
+  --green-medium: #a3d9b1;
   --green-dark: #0f5132;
 
   /* typography */
@@ -49,8 +50,8 @@
   --bodyFont: "Montserrat", sans-serif;
   --smallText: 0.7em;
   /* rest */
-  --backgroundColor: var(--grey-50);
-  --textColor: var(--grey-1000);
+  --backgroundColor: var(--grey-1100);
+  --textColor: var(--grey-500);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -191,7 +192,7 @@ textarea {
   width: 100%;
   padding: 0.375rem 0.75rem;
   border-radius: var(--borderRadius);
-  background: var(--grey-50);
+  background: var(--grey-1100);
   border-color: transparent;
   border: 1px solid var(--grey-300);
 }
@@ -218,6 +219,7 @@ textarea {
   max-width: var(--fixed-width);
   margin: 0 auto;
   margin-top: 6rem;
+  background-color: var(--grey-1000);
 }
 .task-form h4 {
   text-align: center;
@@ -237,6 +239,7 @@ textarea {
     border-radius: 0;
     border-top-left-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
+    color: var(--grey-50);
   }
   .submit-btn {
     margin-top: 0;
@@ -261,8 +264,8 @@ form > :last-child {
 }
 
 .alert-success {
-  color: var(--green-dark);
-  background-color: var(--green-light);
+  color: var(--green-light);
+  background-color: var(--green-dark);
 }
 .alert-danger {
   color: var(--red-dark);
@@ -272,7 +275,7 @@ form > :last-child {
   color: var(--red-dark);
 }
 .text-success {
-  color: var(--green-dark);
+  color: var(--green-medium);
 }
 /* loading */
 @keyframes spinner {
@@ -342,13 +345,15 @@ form > :last-child {
 }
 .single-task {
   padding: 1rem 2.5rem;
-  background: var(--white);
+  background: var(--grey-11000);
   border-radius: var(--borderRadius);
+  border: 1px solid var(--grey-300);
   box-shadow: var(--shadow-2);
   transition: var(--transition);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-color: var(--grey-50);
 }
 .single-task:hover {
   box-shadow: var(--shadow-4);
